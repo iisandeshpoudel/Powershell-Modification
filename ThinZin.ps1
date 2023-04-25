@@ -1,1 +1,1 @@
-ls
+Write-Host "Successful"
