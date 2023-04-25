@@ -33,6 +33,7 @@ Set-PSReadLineOption -EditMode Windows
 
 
 ```
+![alt text]([image_path](https://github.com/iisandeshpoudel/Powershell-Modification/blob/main/misc/remove%20watermark.png?raw=true))
 
 
-https://github.com/iisandeshpoudel/Powershell-Modification/blob/main/misc/remove%20watermark.png?raw=true
+
