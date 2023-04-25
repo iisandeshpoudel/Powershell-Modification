@@ -33,3 +33,5 @@ Set-PSReadLineOption -EditMode Windows
 
 
 ```
+# To Remove the text shown in the startup of powershell session
+![To Remove the text shown in the startup of powershell session](https://github.com/iisandeshpoudel/Powershell-Modification/blob/main/misc/remove%20watermark.png?raw=true)
