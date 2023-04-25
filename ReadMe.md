@@ -21,7 +21,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 
 #Remove the hash of the below line and replace the default location when powershell starts according to your desire.
- 
+
 #Set-Location D:\
 
 
