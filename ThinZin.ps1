@@ -70,5 +70,8 @@ Install-Module -Name PSReadLine -RequiredVersion 2.2.5
 # setting > profile > powershell > Fonts : Set "CascadiaCode NF"
 Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha -o cove.zip
 
+# Add "code garum hai context menu" 
+Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/ContextMenu.ps1
+
 
 
