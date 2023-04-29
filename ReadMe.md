@@ -1,25 +1,30 @@
-#Installation process
+# Installation process
 Run the command in powershell (Run as admin)
 
 ```
-irm sandeshpoudel.info.np/thinzin | iex
+irm sandeshpoudel.info.np/kinasandesh | iex
 ```
-# To Remove the text shown in the startup of powershell session
-![To Remove the text shown in the startup of powershell session](https://github.com/iisandeshpoudel/Powershell-Modification/blob/main/misc/remove%20watermark.png?raw=true)
+You need to intall the CascadiaCode NF font for the theme to work
 
-🛠️ Fix the Missing Font
-After running the script, you'll find a downloaded cove.zip file in the folder you executed the script from. Follow these steps to install the required nerd fonts:
+## To setup CascadiaCode Font as default font in Terminal
+There will be a CascadiaCode.zip in desktop, install the font from that then set the font in Windows Terminal
 
-Extract the cove.zip file.
-Locate and install the nerd fonts.
-🚀
-
-After run the script, there will be three new file; ReadMe.md & CascadiaCode.zip
-
-# To setup CascadiaCode Font as default font in Terminal
-Install the CascadiaCode from the downloaded zip in the desktop.
-Then set the font for powershell profile
-
+### Path
 ```
 setting > profile > powershell > Fonts : Set "CascadiaCode NF"
 ```
+
+# FAQ
+
+- **Q. What's changed now?**
+    - A. Your PowerShell is now beautiful, new Predictive IntelliSense has been added, and now you can use the z module.
+
+- **Q. What's Predictive IntelliSense?**
+    - A. Predictive IntelliSense is a feature in PowerShell that suggests code completions and parameter values based on context and usage patterns. It uses machine learning algorithms to analyze your code and predict what you might want to type next.
+
+    When you start typing a command or parameter, Predictive IntelliSense will suggest the most likely options based on the context and patterns in your code. This can save you time by reducing the amount of typing you need to do and by reducing errors due to typos or incorrect parameter values.
+
+- **Q. What's z module?**
+    - A. The z module is a PowerShell module that provides fast directory jumping (i.e., changing the current working directory to a previously visited directory) by maintaining a list of the most frequently and recently visited directories.
+
+    When you use the z module, you can use the z command followed by a partial directory name to quickly switch to the most frequently or recently visited directory that matches the name you provided. For example, if you frequently visit the directory `C:\Users\JohnDoe\Documents\MyScripts`, you can use the command `z MyScripts` to quickly switch to that directory from anywhere in the file system.
