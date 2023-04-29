@@ -1,3 +1,5 @@
+Congoo!! Everything went smoothly
+
 You need to install the CascadiaCode NF font for the theme to work.
 
 To setup CascadiaCode Font as default font in Terminal
