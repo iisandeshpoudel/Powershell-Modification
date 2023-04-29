@@ -4,12 +4,37 @@
 <#
 
 ok, let me simplfy for myself to understand
-step 1. creating default and rewrite it with ThinZin profile
-        ps. "$profile" reloads the profile hai so don't forget to do that
-step 2. install required programs
+step 1. install required programs
         ps. force everything, and elavate the powershell
+step 2. creating default and rewrite it with ThinZin profile
+        ps. "$profile" reloads the profile hai so don't forget to do that
 
 #>
+
+
+#installation process
+
+<# 
+Setting up priority as trusted .... kina ki next step ma aauni sabai prompt lai 'YES' dinxa
+so no manunal input, run the script once and every prompt is dealt with. Fonts chai manually nai install garna parni vayo
+can't make it automatic. Also terminal ma setting ma pani manually nai CardicD
+#> 
+
+Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+Install-Script -Name winget-install -Force
+
+
+#installing Oh-my-posh
+winget install JanDeDobbeleer.OhMyPosh -s winget
+
+#installng terminal icon
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
+#installing z module
+Install-Module -Name z -Repository PSGallery
+
+#installing ps readline
+Install-Module -Name PSReadLine -RequiredVersion 2.2.5
 
 #If the file does not exist, create it.
 if (!(Test-Path -Path $PROFILE -PathType Leaf)) {
@@ -41,29 +66,6 @@ else {
 }
 & $profile
 
-#installation process
-
-<# 
-Setting up priority as trusted .... kina ki next step ma aauni sabai prompt lai 'YES' dinxa
-so no manunal input, run the script once and every prompt is dealt with. Fonts chai manually nai install garna parni vayo
-can't make it automatic. Also terminal ma setting ma pani manually nai CardicD
-#> 
-
-Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
-Install-Script -Name winget-install -Force
-
-
-#installing Oh-my-posh
-winget install JanDeDobbeleer.OhMyPosh -s winget
-
-#installng terminal icon
-Install-Module -Name Terminal-Icons -Repository PSGallery
-
-#installing z module
-Install-Module -Name z -Repository PSGallery
-
-#installing ps readline
-Install-Module -Name PSReadLine -RequiredVersion 2.2.5
 
 
 #This downloads the CascadiaCode fonts but install it manually, the set the font in powershell
