@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
-@="Code garum hai"
-"Icon"="\"C:\\Program Files\\Microsoft VS Code\\resources\\app\\resources\\win32\\vscode.ico\""
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
-@="\"C:\\Users\\Sandesh Poudel\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%V\""
