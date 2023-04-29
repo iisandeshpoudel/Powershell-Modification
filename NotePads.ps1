@@ -47,3 +47,7 @@ $originalApp = "C:\Windows\System32\notepad.exe"
 if (Test-Path $originalApp) {
     Remove-Item $originalApp -Force
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b608ce6f1df355648a75104283b0d1e82dd68a64
