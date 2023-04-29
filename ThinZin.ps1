@@ -68,12 +68,12 @@ Install-Module -Name PSReadLine -RequiredVersion 2.2.5
 
 #This downloads the CascadiaCode fonts but install it manually, the set the font in powershell
 # setting > profile > powershell > Fonts : Set "CascadiaCode NF"
-$desktopPath = [Environment]::GetFolderPath('Desktop')
-$url = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha'
-$filePath = Join-Path $desktopPath 'CascadiaCode.zip'
+Invoke-WebRequest "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha" -OutFile "$([Environment]::GetFolderPath('Desktop'))\CascadiaCode.zip"
 
-Invoke-WebRequest -Uri $url -OutFile $filePath
+#Context ma "Code garum hai" add garni
+Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/ContextMenu.ps1
 
+#For joson file set up
+Invoke-RestMethod "https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/settings.json" -OutFile "$env:APPDATA\Code\User\settings.json" -UseBasicParsing
 
-
-
+#To create readme file
