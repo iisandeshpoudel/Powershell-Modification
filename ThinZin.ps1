@@ -1,6 +1,6 @@
 #euta profile create garna, next oldprofile for safekeeping
-#then to create profile
-#replace that profile with ThinZin.ps1
+#then to create default profile
+#replace that profile with ThinZinprofile.ps1
 <#
 
 ok, let me simplfy for myself to understand
@@ -26,7 +26,7 @@ if (!(Test-Path -Path $PROFILE -PathType Leaf)) {
             }
         }
 
-        Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/ThinZin.ps1 -o $PROFILE
+        Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/profile.ps1 -o $PROFILE
         Write-Host "The profile @ [$PROFILE] has been created."
     }
     catch {
@@ -36,7 +36,7 @@ if (!(Test-Path -Path $PROFILE -PathType Leaf)) {
 # If the file already exists, show the message and do nothing.
  else {
 		 Get-Item -Path $PROFILE | Move-Item -Destination oldprofile.ps1
-		 Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/ThinZin.ps1 -o $PROFILE
+		 Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/profile.ps1 -o $PROFILE
 		 Write-Host "The profile @ [$PROFILE] has been created and old profile removed."
  }
 & $profile
