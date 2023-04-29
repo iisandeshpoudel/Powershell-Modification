@@ -77,3 +77,4 @@ Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-M
 Invoke-RestMethod "https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/settings.json" -OutFile "$env:APPDATA\Code\User\settings.json" -UseBasicParsing
 
 #To create readme file
+Invoke-RestMethod  https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/ReadMe.md -OutFile "$([Environment]::GetFolderPath('Desktop'))\ReadMe.txt"
