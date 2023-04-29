@@ -51,7 +51,7 @@ can't make it automatic. Also terminal ma setting ma pani manually nai CardicD
 
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 Install-Script -Name winget-install -Force
-winget-install.ps1
+
 
 #installing Oh-my-posh
 winget install JanDeDobbeleer.OhMyPosh -s winget
