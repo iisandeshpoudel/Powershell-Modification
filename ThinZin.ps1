@@ -26,7 +26,7 @@ if (!(Test-Path -Path $PROFILE -PathType Leaf)) {
             }
         }
 
-        Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/profile.ps1 -o $PROFILE
+        Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/ThinZinprofile.ps1 -o $PROFILE
         Write-Host "The profile @ [$PROFILE] has been created."
     }
     catch {
@@ -34,11 +34,11 @@ if (!(Test-Path -Path $PROFILE -PathType Leaf)) {
     }
 }
 # If the file already exists, show the message and do nothing.
- else {
-		 Get-Item -Path $PROFILE | Move-Item -Destination oldprofile.ps1
-		 Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/profile.ps1 -o $PROFILE
-		 Write-Host "The profile @ [$PROFILE] has been created and old profile removed."
- }
+else {
+    Get-Item -Path $PROFILE | Move-Item -Destination oldprofile.ps1
+    Invoke-RestMethod https://raw.githubusercontent.com/iisandeshpoudel/Powershell-Modification/main/ThinZinprofile.ps1 -o $PROFILE
+    Write-Host "The profile @ [$PROFILE] has been created and old profile removed."
+}
 & $profile
 
 #installation process
