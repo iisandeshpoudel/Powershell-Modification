@@ -1,5 +1,4 @@
-#Uncomment it for gitbash
-#Import-Module posh-git
+Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme amro
 Import-Module -Name Terminal-Icons
