@@ -1,7 +1,8 @@
 #Below is the .reg code for that same action
 #Uncomment it then paste it in notepad, save it as .reg file and run it
 
-<#Windows Registry Editor Version 5.00
+<#
+Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
 @="Code garum hai"
